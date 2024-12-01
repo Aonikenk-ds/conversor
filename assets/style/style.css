@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #ffca00;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+p {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.btn {
+    color: white;
+    background: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+    border: none;
+}
+
+.conversor-imagen {
+    width: 250px;
+}
+
+.moneda {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moneda select {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    appearance: none;
+}
+
+.moneda input {
+    border: 1px solid #ccc;
+    font-size: 30px;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.taza-cambio-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cambio {
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+select:focus, input:focus, button:focus {
+    outline: 0;
+}
+
+@media (max-width: 600px) {
+    .moneda input {
+        width: 200px;
+    }
+}

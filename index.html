@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moneda</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <img src="./assets/img/img1.png" alt="conversor moneda" class="conversor-imagen">
+    <h1>Conversor</h1>
+    <p>Escoge la moneda y la cantidad para realizar la conversión</p>
+
+    <div class="container">
+        <div class="moneda">
+            <select id="moneda-uno">
+                <option value="uf">UF</option>
+                <option value="ivp">IVP</option>
+                <option value="dolar">Dólar observado</option>
+                <option value="dolar_intercambio">Dólar acuerdo</option>
+                <option value="euro">Euro</option>
+                <option value="utm">UTM</option>
+                <option value="bitcoin">BTC</option>
+                <option value="clp">Pesos chilenos</option>
+            </select>
+
+            <input type="number" id="cantidad-uno" placeholder="0" value="1">
+        </div>
+
+        <div class="taza-cambio-container">
+            <button class="btn" id="taza">cambio</button>
+            <div class="cambio" id="cambio"></div>
+        </div>
+
+        <div class="moneda">
+            <select id="moneda-dos">
+                <option value="uf">UF</option>
+                <option value="ivp">IVP</option>
+                <option value="dolar">Dólar observado</option>
+                <option value="dolar_intercambio">Dólar acuerdo</option>
+                <option value="euro">Euro</option>
+                <option value="utm">UTM</option>
+                <option value="bitcoin">BTC</option>
+                <option value="clp">Pesos chilenos</option>
+            </select>
+
+            <input type="number" id="cantidad-dos" placeholder="0" value="1">
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
